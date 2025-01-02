@@ -105,7 +105,7 @@
 import { useState, useEffect } from 'react';
 
 import ProductCard from './ProductCart';
-import { Product } from '@/pages/types';
+import { Product } from '@/types/types';
 
 const MenuItems = () => {
   const [products, setProducts] = useState<Product[]>([]);
