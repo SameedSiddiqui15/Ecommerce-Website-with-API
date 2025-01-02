@@ -105,7 +105,7 @@
 import { useState, useEffect } from 'react';
 
 import ProductCard from './ProductCart';
-import {Product} from '@/pages/types';
+import { Product } from '@/pages/types';
 
 const MenuItems = () => {
   const [products, setProducts] = useState<Product[]>([]);
@@ -213,7 +213,7 @@ const MenuItems = () => {
           )}
         </div>
         {isCheckout && (
-          <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 text-black">
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 text-black overflow-visible">
             <div className="bg-white p-8 rounded-lg shadow-lg w-full sm:w-auto">
               <h2 className="text-4xl font-bold text-blue-600 mb-4">Checkout</h2>
               <p className="text-lg text-red-600">Please confirm your order before proceeding</p>
